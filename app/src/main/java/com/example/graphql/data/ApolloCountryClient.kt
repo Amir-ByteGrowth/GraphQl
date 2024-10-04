@@ -6,8 +6,9 @@ import com.example.CountryQuery
 import com.example.graphql.domain.CountryClient
 import com.example.graphql.domain.DetailedCountry
 import com.example.graphql.domain.SimpleCountry
+import javax.inject.Inject
 
-class ApolloCountryClient(
+class ApolloCountryClient @Inject constructor(
     private val apolloClient: ApolloClient,
 ) : CountryClient {
     override suspend fun getCountries(): List<SimpleCountry> {

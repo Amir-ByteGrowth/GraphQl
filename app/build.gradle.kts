@@ -91,7 +91,7 @@ dependencies {
 
     //
     implementation("com.apollographql.apollo3:apollo-runtime:3.7.3")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
 
     //hilt
     implementation(libs.hilt.android)
