@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
                 val viewModel = hiltViewModel<CountriesViewModel>()
                 val state by viewModel.state.collectAsState()
                 CountryScreen(state = state, onSelectCountry = viewModel::selectCountry
-                , onDismissDialog = {}
+                , onDismissDialog = viewModel::dismissSelectedCountry
                 )
             }
         }
